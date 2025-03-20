@@ -1,8 +1,14 @@
 package Burradas;
 import java.util.Scanner;
+
+/** 
+ * Clase de prueba para la deteccion de palabras obscenas 
+ * en los mensajes introducidos por el usuario
+ * 
+ * */
 public class BurradasTest {
-
-
+	
+	//declaracion de array de palabras prohibidas
 
 	    static String tpalabros[] = {"caca","culo","pedo","pis"};
 	    
@@ -27,6 +33,16 @@ public class BurradasTest {
 	       }while (!linea.contentEquals("."));
 	       System.out.println("FIN PROGRAMA"); 
 	    }
+	    
+	    /**
+	     * lee la linea y verifica si tiene alguna de las palabras
+	     * del array.
+	     * @return la cadena introducida por el usuario si no contiene
+	     * palabras prohibidas.
+	     * @throws BurradasNOException si la cadena contiene alguna 
+	     * palabra prohibida.
+	     * 
+	     * */
 	     
 	    public static String leerLineaOK (Scanner sc) throws BurradasNOException {
 	    	String cadena = sc.nextLine();

@@ -1,8 +1,11 @@
 package Burradas;
 
 public class BurradasNOException extends Exception {
-	// si lo extendemos con runtimeexception en vez de exception NO es obligatorio
-	// capturarla pero el programa termina
+	/**
+	 * esta clase representa la excepcion que se lanza cuando se detecta el
+	 * lengaje obsceno en el Scanner.
+	 * Se genera el contructor
+	 * */
 	public BurradasNOException(String palabra) {
 	super("Error no se puede lenguaje obsceno " +palabra);
 	}
